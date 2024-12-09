@@ -1,118 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Genussbox</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            line-height: 1.6;
-            padding: 20px;
-            margin-top: 80px;
-        }
-
-        h1 {
-	    background-color: rgb(25, 150, 0); 
-            color: white;
-            text-align: center;
-            padding: 12px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1000; 
-            border-bottom: 8px solid rgb(25,120,0);
-            font-size: 48px;
-        }
-
-        .recipe-list {
-            display: block;
-            padding: 20px 0;
-	    max-width: 1000px;
-            margin: 20px auto;
-        }
-
-        .recipe-card {
-            background-color: #fff;
-            border: 8px solid rgba(0, 0, 0, 0);
-            border-radius: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            margin-bottom: 20px;
-            text-align: left;
-            transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.6s ease, background-color 0.6s ease, border-color 0.3s ease;
-            cursor: pointer;
-        }
-
-        .recipe-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            background-color: rgb(255,255,245);
-            border-color: rgb(90, 200, 40);
-        }
-
-        .recipe-card h2 {
-            font-size: 36px;
-            font-weight: bold;
-            color: rgb(25, 120, 0); 
-            margin-bottom: 4px;
-        }
-    </style>
-</head>
-<body>
-        <h1>Genussbox - Online Kochrezepte</h1>
-        <div class="recipe-list">
-            <div class="recipe-card" onclick="window.open('Apfelpfannkuchen.pdf', '_blank')">
-                <h2>Apfelpfannkuchen</h2>
-            </div>
-            <div class="recipe-card" onclick="window.open('Blumenkohlauflauf.pdf', '_blank')">
-                <h2>Blumenkohlauflauf</h2>
-            </div>
-            <div class="recipe-card" onclick="window.open('Frikadellen_Erbsen_Reis.pdf', '_blank')">
-                <h2>Frikadellen Erbsen Reis</h2>
-            </div>
-            <div class="recipe-card" onclick="window.open('Grünkohleintopf.pdf', '_blank')">
-                <h2>Grünkohleintopf</h2>
-            </div>
-            <div class="recipe-card" onclick="window.open('Kartoffelecken_Backfisch_Spinat.pdf', '_blank')">
-                <h2>Kartoffelecken Backfisch Spinat</h2>
-            </div>
-            <div class="recipe-card" onclick="window.open('Kartoffelsalat.pdf', '_blank')">
-                <h2>Kartoffelsalat</h2>
-            </div>
-            <div class="recipe-card" onclick="window.open('Lasagne.pdf', '_blank')">
-                <h2>Lasagne</h2>
-            </div>
-            <div class="recipe-card" onclick="window.open('Pizza.pdf', '_blank')">
-                <h2>Pizza</h2>
-            </div>
-            <div class="recipe-card" onclick="window.open('Schinken_Nudel_Auflauf.pdf', '_blank')">
-                <h2>Schinken Nudel Auflauf</h2>
-            </div>
-            <div class="recipe-card" onclick="window.open('Schweinemedaillons_Speckbohnen_Reis.pdf', '_blank')">
-                <h2>Schweinemedaillons Speckbohnen Reis</h2>
-            </div>
-            <div class="recipe-card" onclick="window.open('Spaghetti_Bolognese.pdf', '_blank')">
-                <h2>Spaghetti Bolognese</h2>
-            </div>
-            <div class="recipe-card" onclick="window.open('Tortellini_Schinken-Sahne-Sauce.pdf', '_blank')">
-                <h2>Tortellini Schinken-Sahne-Sauce</h2>
-            </div>
-            <div class="recipe-card" onclick="window.open('Waffeln.pdf', '_blank')">
-                <h2>Waffeln</h2>
-            </div>
-            <div class="recipe-card" onclick="window.open('Wraps.pdf', '_blank')">
-                <h2>Wraps</h2>
-            </div>
-        </div>
-</body>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>Genussbox</title>
+      <style>
+         body{
+         font-family:
+         Arial,sans-serif;
+         background-color:#f4f4f4;
+         color:#333;
+         line-height:1.6;
+         padding:20px;
+         margin-top:80px;
+         }
+         h1{
+         background-color:#199600;
+         color:#fff;text-align:center;
+         padding:12px;
+         position:fixed;
+         top:0;left:0;
+         width:100%;
+         z-index:1000;
+         border-bottom:8px solid #197800;
+         font-size:48px;
+         margin:0;
+         }
+         .recipe-list{
+         display:block;
+         padding:20px 0;
+         max-width:1000px;
+         margin:20px auto;
+         }
+         .recipe-card{
+         background-color:#fff;
+         border:8px solid transparent;
+         border-radius:20px;
+         box-shadow:0 4px 8px rgba(0,0,0,.1);
+         padding:20px;
+         margin-bottom:20px;
+         text-align:left;
+         transition:transform .3s ease,box-shadow .3s ease,border-radius .6s ease,background-color .6s ease,border-color .3s ease;
+         cursor:pointer;
+         }
+         .recipe-card:hover{
+         transform:translateY(-8px);
+         box-shadow:0 8px 16px rgba(0,0,0,.2);
+         background-color:#fffff5;
+         border-color:#5ac828;
+         }
+         .recipe-card h2{
+         font-size:36px;
+         font-weight:700;
+         color:#197800;
+         margin:0;
+         }
+      </style>
+   </head>
+   <body>
+      <h1>Genussbox - Online Kochrezepte</h1>
+      <div class="recipe-list">
+         <div class="recipe-card" onclick='window.open("Apfelpfannkuchen.pdf","_blank")'>
+            <h2>Apfelpfannkuchen</h2>
+         </div>
+         <div class="recipe-card" onclick='window.open("Blumenkohlauflauf.pdf","_blank")'>
+            <h2>Blumenkohlauflauf</h2>
+         </div>
+         <div class="recipe-card" onclick='window.open("Frikadellen_Erbsen_Reis.pdf","_blank")'>
+            <h2>Frikadellen Erbsen Reis</h2>
+         </div>
+         <div class="recipe-card" onclick='window.open("Grünkohleintopf.pdf","_blank")'>
+            <h2>Grünkohleintopf</h2>
+         </div>
+         <div class="recipe-card" onclick='window.open("Kartoffelecken_Backfisch_Spinat.pdf","_blank")'>
+            <h2>Kartoffelecken Backfisch Spinat</h2>
+         </div>
+         <div class="recipe-card" onclick='window.open("Kartoffelsalat.pdf","_blank")'>
+            <h2>Kartoffelsalat</h2>
+         </div>
+         <div class="recipe-card" onclick='window.open("Lasagne.pdf","_blank")'>
+            <h2>Lasagne</h2>
+         </div>
+         <div class="recipe-card" onclick='window.open("Pizza.pdf","_blank")'>
+            <h2>Pizza</h2>
+         </div>
+         <div class="recipe-card" onclick='window.open("Schinken_Nudel_Auflauf.pdf","_blank")'>
+            <h2>Schinken Nudel Auflauf</h2>
+         </div>
+         <div class="recipe-card" onclick='window.open("Schweinemedaillons_Speckbohnen_Reis.pdf","_blank")'>
+            <h2>Schweinemedaillons Speckbohnen Reis</h2>
+         </div>
+         <div class="recipe-card" onclick='window.open("Spaghetti_Bolognese.pdf","_blank")'>
+            <h2>Spaghetti Bolognese</h2>
+         </div>
+         <div class="recipe-card" onclick='window.open("Tortellini_Schinken-Sahne-Sauce.pdf","_blank")'>
+            <h2>Tortellini Schinken-Sahne-Sauce</h2>
+         </div>
+         <div class="recipe-card" onclick='window.open("Waffeln.pdf","_blank")'>
+            <h2>Waffeln</h2>
+         </div>
+         <div class="recipe-card" onclick='window.open("Wraps.pdf","_blank")'>
+            <h2>Wraps</h2>
+         </div>
+      </div>
+   </body>
 </html>
