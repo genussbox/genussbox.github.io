@@ -20,8 +20,8 @@
             margin-top: 80px;
         }
 
-        header {
-            background-color: rgb(25, 150, 0); 
+        h1 {
+	    background-color: rgb(25, 150, 0); 
             color: white;
             text-align: center;
             padding: 12px;
@@ -31,20 +31,14 @@
             width: 100%;
             z-index: 1000; 
             border-bottom: 8px solid rgb(25,120,0);
-        }
-
-        h1 {
             font-size: 48px;
-        }
-
-        main {
-            max-width: 1000px;
-            margin: 20px auto;
         }
 
         .recipe-list {
             display: block;
             padding: 20px 0;
+	    max-width: 1000px;
+            margin: 20px auto;
         }
 
         .recipe-card {
@@ -71,17 +65,12 @@
             font-weight: bold;
             color: rgb(25, 120, 0); 
             margin-bottom: 4px;
-            text-decoration: none; /* Keine Unterstreichung */
         }
     </style>
 </head>
 <body>
-    <header>
         <h1>Genussbox - Online Kochrezepte</h1>
-    </header>
-
-    <main>
-        <section class="recipe-list">
+        <div class="recipe-list">
             <div class="recipe-card" onclick="window.open('Apfelpfannkuchen.pdf', '_blank')">
                 <h2>Apfelpfannkuchen</h2>
             </div>
@@ -124,7 +113,6 @@
             <div class="recipe-card" onclick="window.open('Wraps.pdf', '_blank')">
                 <h2>Wraps</h2>
             </div>
-        </section>
-    </main>
+        </div>
 </body>
 </html>
