@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="robots" content="noindex, nofollow">
+    <meta name="robots" content="noindex, nofollow">
     <title>Genussbox</title>
     <style>
-        /* Grundlegende Reset-Stile */
         * {
             margin: 0;
             padding: 0;
@@ -19,7 +18,7 @@
             color: #333;
             line-height: 1.6;
             padding: 20px;
-            margin-top: 80px; 
+            margin-top: 80px;
         }
 
         header {
@@ -32,7 +31,7 @@
             left: 0;
             width: 100%;
             z-index: 1000; 
-			border-bottom: 8px solid rgb(25,120,0);
+            border-bottom: 8px solid rgb(25,120,0);
         }
 
         h1 {
@@ -44,64 +43,36 @@
             margin: 20px auto;
         }
 
-        /* Rezept-Container */
         .recipe-list {
             display: block;
             padding: 20px 0;
         }
 
-        /* Rezeptkarten */
         .recipe-card {
             background-color: #fff;
-			border: 8px solid rgba(0, 0, 0, 0);
+            border: 8px solid rgba(0, 0, 0, 0);
             border-radius: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             padding: 20px;
             margin-bottom: 20px;
             text-align: left;
             transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.6s ease, background-color 0.6s ease, border-color 0.3s ease;
+            cursor: pointer;
         }
 
         .recipe-card:hover {
             transform: translateY(-8px);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-			background-color: rgb(255,255,245);
-			border-color: rgb(90, 200, 40);
+            background-color: rgb(255,255,245);
+            border-color: rgb(90, 200, 40);
         }
 
         .recipe-card h2 {
             font-size: 36px;
-			font-weight: bold;
-            color: rgb(25, 120, 0); /* Verdantgrün in RGB */
-            margin-bottom: 4px;
-			text-decoration: underline;
-        }
-
-        .recipe-card p {
-            font-size: 20px;
-            color: #555;
-            margin-bottom: 4px;
-        }
-
-        /* Rezept-Button */
-        .recipe-button {
-            display: inline-block;
-            padding: 8px 40px;
-            background-color: rgb(25, 150, 0); /* Verdantgrün in RGB */
-            color: white;
-            text-decoration: none;
-            border-radius: 16px;
             font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-
-        .recipe-button:hover {
-            background-color: rgb(50, 200, 0); /* Dunkleres Grün für Hover-Effekt */
-        }
-		.wingdings {
-            font-family: "Wingdings", sans-serif;
-			font-size: 36px;
-			vertical-align: -4px;
+            color: rgb(25, 120, 0); 
+            margin-bottom: 4px;
+            text-decoration: none; /* Keine Unterstreichung */
         }
     </style>
 </head>
@@ -112,75 +83,47 @@
 
     <main>
         <section class="recipe-list">
-			<div class="recipe-card">
+            <div class="recipe-card" onclick="window.open('Apfelpfannkuchen.pdf', '_blank')">
                 <h2>Apfelpfannkuchen</h2>
-                 <p><span class="wingdings"></span> 60 Minuten</p>
-                <a href="Apfelpfannkuchen.pdf" class="recipe-button" target="_blank">Rezept öffnen</a>
             </div>
-			<div class="recipe-card">
+            <div class="recipe-card" onclick="window.open('Blumenkohlauflauf.pdf', '_blank')">
                 <h2>Blumenkohlauflauf</h2>
-                 <p><span class="wingdings"></span> 60 Minuten</p>
-                <a href="Blumenkohlauflauf.pdf" class="recipe-button" target="_blank">Rezept öffnen</a>
             </div>
-			<div class="recipe-card">
+            <div class="recipe-card" onclick="window.open('Frikadellen_Erbsen_Reis.pdf', '_blank')">
                 <h2>Frikadellen Erbsen Reis</h2>
-                 <p><span class="wingdings"></span> 60 Minuten</p>
-                <a href="Frikadellen_Erbsen_Reis.pdf" class="recipe-button" target="_blank">Rezept öffnen</a>
             </div>
-			<div class="recipe-card">
+            <div class="recipe-card" onclick="window.open('Grünkohleintopf.pdf', '_blank')">
                 <h2>Grünkohleintopf</h2>
-                 <p><span class="wingdings"></span> 75 Minuten</p>
-                <a href="Grünkohleintopf.pdf" class="recipe-button" target="_blank">Rezept öffnen</a>
             </div>
-			<div class="recipe-card">
+            <div class="recipe-card" onclick="window.open('Kartoffelecken_Backfisch_Spinat.pdf', '_blank')">
                 <h2>Kartoffelecken Backfisch Spinat</h2>
-                 <p><span class="wingdings"></span> 60 Minuten</p>
-                <a href="Kartoffelecken_Backfisch_Spinat.pdf" class="recipe-button" target="_blank">Rezept öffnen</a>
             </div>
-			<div class="recipe-card">
+            <div class="recipe-card" onclick="window.open('Kartoffelsalat.pdf', '_blank')">
                 <h2>Kartoffelsalat</h2>
-                 <p><span class="wingdings"></span> 60 Minuten</p>
-                <a href="Kartoffelsalat.pdf" class="recipe-button" target="_blank">Rezept öffnen</a>
             </div>
-			<div class="recipe-card">
+            <div class="recipe-card" onclick="window.open('Lasagne.pdf', '_blank')">
                 <h2>Lasagne</h2>
-                 <p><span class="wingdings"></span> 120 Minuten</p>
-                <a href="Lasagne.pdf" class="recipe-button" target="_blank">Rezept öffnen</a>
             </div>
-			<div class="recipe-card">
+            <div class="recipe-card" onclick="window.open('Pizza.pdf', '_blank')">
                 <h2>Pizza</h2>
-                 <p><span class="wingdings"></span> 60 Minuten</p>
-                <a href="Pizza.pdf" class="recipe-button" target="_blank">Rezept öffnen</a>
             </div>
-			<div class="recipe-card">
+            <div class="recipe-card" onclick="window.open('Schinken_Nudel_Auflauf.pdf', '_blank')">
                 <h2>Schinken Nudel Auflauf</h2>
-                 <p><span class="wingdings"></span> 60 Minuten</p>
-                <a href="Schinken_Nudel_Auflauf.pdf" class="recipe-button" target="_blank">Rezept öffnen</a>
             </div>
-			<div class="recipe-card">
+            <div class="recipe-card" onclick="window.open('Schweinemedaillons_Speckbohnen_Reis.pdf', '_blank')">
                 <h2>Schweinemedaillons Speckbohnen Reis</h2>
-                 <p><span class="wingdings"></span> 60 Minuten</p>
-                <a href="Schweinemedaillons_Speckbohnen_Reis.pdf" class="recipe-button" target="_blank">Rezept öffnen</a>
             </div>
-            <div class="recipe-card">
+            <div class="recipe-card" onclick="window.open('Spaghetti_Bolognese.pdf', '_blank')">
                 <h2>Spaghetti Bolognese</h2>
-                <p><span class="wingdings"></span> 45 Minuten</p>
-                <a href="Spaghetti_Bolognese.pdf" class="recipe-button" target="_blank">Rezept öffnen</a>
             </div>
-			<div class="recipe-card">
+            <div class="recipe-card" onclick="window.open('Tortellini_Schinken-Sahne-Sauce.pdf', '_blank')">
                 <h2>Tortellini Schinken-Sahne-Sauce</h2>
-                 <p><span class="wingdings"></span> 45 Minuten</p>
-                <a href="Tortellini_Schinken-Sahne-Sauce.pdf" class="recipe-button" target="_blank">Rezept öffnen</a>
             </div>
-			<div class="recipe-card">
+            <div class="recipe-card" onclick="window.open('Waffeln.pdf', '_blank')">
                 <h2>Waffeln</h2>
-                 <p><span class="wingdings"></span> 40 Minuten</p>
-                <a href="Waffeln.pdf" class="recipe-button" target="_blank">Rezept öffnen</a>
             </div>
-			<div class="recipe-card">
+            <div class="recipe-card" onclick="window.open('Wraps.pdf', '_blank')">
                 <h2>Wraps</h2>
-                 <p><span class="wingdings"></span> 45 Minuten</p>
-                <a href="Wraps.pdf" class="recipe-button" target="_blank">Rezept öffnen</a>
             </div>
         </section>
     </main>
